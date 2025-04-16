@@ -10,7 +10,6 @@
     color: #1a1a1a;
   }
   
-  /* Sticky, translucent, blurred nav */
   .header {
     position: sticky;
     top: 0;
@@ -28,10 +27,10 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.7); /* semi-transparent */
-    backdrop-filter: blur(10px); /* blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optional subtle shadow */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
   }
   
   .logo {
@@ -76,7 +75,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.85); /* optional: soft white overlay */
+    background: rgba(255, 255, 255, 0.85);
     z-index: -1;
   }
   
@@ -187,7 +186,6 @@
     line-height: 1.5;
   }
   
-/* New Section: Real Estate-Focused Digital Mastery */
 .mastery-section {
   padding: 80px 20px;
   text-align: center;
@@ -260,7 +258,6 @@
   background-color: #0056b3;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .mastery-heading {
     font-size: 1.5rem;
@@ -280,11 +277,10 @@
   }
 
   .mastery-illustration {
-    order: -1; /* Ensures image stays above text on mobile */
+    order: -1; 
   }
 }
 
-/* New Section: Navigating Real Estate's Digital Landscape */
 .digital-landscape-section {
   padding: 80px 20px;
   background-color: #f5f7fa;
@@ -330,14 +326,14 @@
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Changed to column for vertical layout */
+  flex-direction: column; 
   align-items: flex-start;
 }
 
 .landscape-icon {
-  width: 24px; /* Adjust size to match your icons */
-  height: 24px; /* Adjust size to match your icons */
-  margin-bottom: 10px; /* Space between icon and text */
+  width: 24px; 
+  height: 24px; 
+  margin-bottom: 10px;
 }
 
 .landscape-item h3 {
@@ -363,7 +359,6 @@
   height: auto;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .digital-landscape-heading {
     font-size: 1.5rem;
@@ -383,7 +378,7 @@
   }
 
   .landscape-item {
-    align-items: center; /* Center items on mobile */
+    align-items: center;
   }
 
   .landscape-icon {
@@ -391,11 +386,10 @@
   }
 
   .digital-landscape-illustration {
-    order: -1; /* Ensures image stays above text on mobile */
+    order: -1;
   }
 }
 
-/* New Section: Our Expertise in Action */
 .expertise-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -449,7 +443,7 @@
   line-height: 1.5;
 }
 
-/* New Section: Driving Property Inquiries to Conversions (Streamlined Strategies) */
+
 .inquiries-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -524,7 +518,7 @@
   background-color: #1e3a8a;
 }
 
-/* New Section: Driving Property Inquiries to Conversions (Optimized Path) */
+
 .optimized-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -599,7 +593,7 @@
   background-color: #1e3a8a;
 }
 
-/* New Section: Frequently Asked Questions */
+
 .faq-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -656,7 +650,6 @@
   line-height: 1.5;
 }
 
-/* New Section: Your Peace of Mind */
 .peace-section {
   padding: 80px 20px;
   background: linear-gradient(to right, #e0f2fe, #fee2e2);
@@ -695,7 +688,6 @@
   background-color: #1e3a8a;
 }
 
-/* New Section: What Our Pharma Partners Say */
 .pharma-section {
   padding: 80px 20px;
   background-color: #fff;
@@ -763,7 +755,6 @@
   line-height: 1.5;
 }
 
-/* Responsive Adjustments for All New Sections */
 @media (max-width: 768px) {
   .expertise-inner, .inquiries-inner, .optimized-inner, .pharma-inner {
     flex-direction: column;
