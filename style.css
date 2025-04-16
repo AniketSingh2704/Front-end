@@ -1,0 +1,793 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffffff, #f0f8ff);
+    color: #1a1a1a;
+  }
+  
+  /* Sticky, translucent, blurred nav */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7); /* semi-transparent */
+    backdrop-filter: blur(10px); /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* optional subtle shadow */
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #000;
+    color: white;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px 60px;
+    background-image: url('assets/background-complete 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1a1a1a;
+    z-index: 1;
+  }
+  
+  .hero-section {
+    background-image: url('path/to/background-complete\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85); /* optional: soft white overlay */
+    z-index: -1;
+  }
+  
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .hero .highlight {
+    color: #007bff;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .hero p {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .marketing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .marketing img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .services {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .subheading {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+/* New Section: Real Estate-Focused Digital Mastery */
+.mastery-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.mastery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mastery-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.mastery-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mastery-illustration {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mastery-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mastery-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.mastery-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.mastery-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mastery-cta {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.mastery-cta:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mastery-heading {
+    font-size: 1.5rem;
+  }
+
+  .mastery-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .mastery-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mastery-text {
+    text-align: center;
+  }
+
+  .mastery-illustration {
+    order: -1; /* Ensures image stays above text on mobile */
+  }
+}
+
+/* New Section: Navigating Real Estate's Digital Landscape */
+.digital-landscape-section {
+  padding: 80px 20px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.digital-landscape-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.digital-landscape-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.digital-landscape-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.digital-landscape-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.digital-landscape-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.landscape-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Changed to column for vertical layout */
+  align-items: flex-start;
+}
+
+.landscape-icon {
+  width: 24px; /* Adjust size to match your icons */
+  height: 24px; /* Adjust size to match your icons */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.landscape-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.landscape-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.digital-landscape-illustration {
+  flex: 1;
+  min-width: 300px;
+}
+
+.digital-landscape-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .digital-landscape-heading {
+    font-size: 1.5rem;
+  }
+
+  .digital-landscape-subheading {
+    font-size: 1rem;
+  }
+
+  .digital-landscape-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .digital-landscape-text {
+    text-align: center;
+  }
+
+  .landscape-item {
+    align-items: center; /* Center items on mobile */
+  }
+
+  .landscape-icon {
+    margin-bottom: 10px;
+  }
+
+  .digital-landscape-illustration {
+    order: -1; /* Ensures image stays above text on mobile */
+  }
+}
+
+/* New Section: Our Expertise in Action */
+.expertise-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.expertise-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expertise-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.expertise-inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.expertise-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.expertise-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.expertise-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.expertise-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* New Section: Driving Property Inquiries to Conversions (Streamlined Strategies) */
+.inquiries-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.inquiries-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inquiries-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.inquiries-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.inquiries-inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.inquiries-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.inquiries-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.inquiries-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.inquiries-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.inquiries-cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.inquiries-cta:hover {
+  background-color: #1e3a8a;
+}
+
+/* New Section: Driving Property Inquiries to Conversions (Optimized Path) */
+.optimized-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.optimized-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.optimized-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.optimized-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.optimized-inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.optimized-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+.optimized-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.optimized-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.optimized-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.optimized-cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.optimized-cta:hover {
+  background-color: #1e3a8a;
+}
+
+/* New Section: Frequently Asked Questions */
+.faq-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.faq-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.faq-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.faq-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.faq-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.faq-answer {
+  display: none;
+}
+
+.faq-answer p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* New Section: Your Peace of Mind */
+.peace-section {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e0f2fe, #fee2e2);
+  text-align: center;
+}
+
+.peace-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.peace-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.peace-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.peace-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.peace-cta:hover {
+  background-color: #1e3a8a;
+}
+
+/* New Section: What Our Pharma Partners Say */
+.pharma-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pharma-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pharma-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.pharma-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pharma-inner {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pharma-video {
+  flex: 1;
+  max-width: 400px;
+}
+
+.pharma-video-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pharma-testimonial {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.pharma-partner-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pharma-testimonial h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.pharma-testimonial p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments for All New Sections */
+@media (max-width: 768px) {
+  .expertise-inner, .inquiries-inner, .optimized-inner, .pharma-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .expertise-item, .inquiries-item, .optimized-item {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .expertise-icon, .inquiries-icon, .optimized-icon {
+    margin: 0 auto 15px;
+  }
+
+  .faq-item {
+    text-align: center;
+  }
+
+  .peace-content, .pharma-content {
+    text-align: center;
+  }
+
+  .pharma-video, .pharma-testimonial {
+    max-width: 100%;
+  }
+}
